@@ -5,7 +5,7 @@ public class CuentaBancaria {
 	private double fondos;
 	
 	public CuentaBancaria() {
-		this.fondos=1;
+		this.fondos=0;
 	}
 
 	public double mostrar() {
