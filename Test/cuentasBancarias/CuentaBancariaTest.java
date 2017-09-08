@@ -10,6 +10,7 @@ public class CuentaBancariaTest {
 	public void queInicia() {
 		CuentaBancaria c= new CuentaBancaria();
 		Assert.assertEquals(0, c.mostrar(),0);
+		
 	}
 
 }
