@@ -12,9 +12,11 @@ public class CuentasBancarias {
 		this.fondos=fondos;
 	}
 	
-	public double mostrar(){
+	public double mostrarFondos(){
 		return this.fondos;
 	}
+	
+	
 	
 	
 }
