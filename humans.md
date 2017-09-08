@@ -1,4 +1,4 @@
-# La gente detrás del proyecto
+﻿# La gente detrás del proyecto
 
 ## Docentes del Taller
 
@@ -7,5 +7,5 @@
 
 ## Estudiantes
 
-* XXX ([xxx](https://github.com/xxx))
-* XXX ([xxx](https://github.com/xxx))
+* Alexis Francis Aranda ([alexis-aranda](https://github.com/alexis-aranda))
+* Lara Jazmin Cavicchioli ([LaraCavic](https://github.com/LaraCavic))
