@@ -12,9 +12,12 @@ public class CuentasBancarias {
 		this.fondos=fondos;
 	}
 	
-	public void transferirMontoHacia(CuentasBancarias destino, double monto){
+	public boolean transferirMontoHacia(CuentasBancarias destino, double monto){
+		if(monto>this.fondos)
+			return false;
 		this.fondos=this.fondos-monto;
 		destino.fondos=destino.fondos+monto;
+		return true;
 	}
 	
 	public double mostrarFondos(){
