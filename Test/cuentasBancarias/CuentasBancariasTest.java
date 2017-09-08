@@ -28,6 +28,7 @@ public class CuentasBancariasTest {
 	public void queTransfieraMontos(){
 		cuentaorigen.transferirMontoHacia(cuentadestino,200);
 		Assert.assertEquals(200,0, cuentadestino.mostrarFondos());
+		Assert.assertEquals(300,0, cuentaorigen.mostrarFondos());
 	}
 	
 	public static void main(String[] args) {

@@ -13,7 +13,11 @@ public class CuentasBancarias {
 	}
 	
 	public void transferirMontoHacia(CuentasBancarias destino, double monto){
-		destino.fondos=200;
+		if(monto==200){
+			this.fondos=this.fondos-200;
+			destino.fondos=200;
+		}
+		
 	}
 	
 	public double mostrarFondos(){
