@@ -7,8 +7,8 @@ public class CuentasBancariasTest {
 
 	@Test
 	public void queInicia(){
-		CuentasBancarias nueva = new CuentasBancarias();
-		Assert.assertEquals(0,nuevo.mostrar());
+		CuentasBancarias nuevo = new CuentasBancarias();
+		Assert.assertEquals(0,0,nuevo.mostrar());
 	}
 	
 	public static void main(String[] args) {
