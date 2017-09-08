@@ -8,6 +8,10 @@ public class CuentasBancarias {
 		this.fondos=0;
 	}
 	
+	public CuentasBancarias(double fondos){
+		this.fondos=fondos;
+	}
+	
 	public double mostrar(){
 		return this.fondos;
 	}
