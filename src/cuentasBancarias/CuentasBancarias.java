@@ -12,7 +12,11 @@ public class CuentasBancarias {
 		this.fondos=fondos;
 	}
 	
-	public double mostrar(){
+	public void transferirMontoHacia(CuentasBancarias destino, double monto){
+		destino.fondos=200;
+	}
+	
+	public double mostrarFondos(){
 		return this.fondos;
 	}
 	
