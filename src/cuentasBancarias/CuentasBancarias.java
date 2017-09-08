@@ -15,8 +15,6 @@ public class CuentasBancarias {
 	public void transferirMontoHacia(CuentasBancarias destino, double monto){
 		this.fondos=this.fondos-monto;
 		destino.fondos=destino.fondos+monto;
-	
-		
 	}
 	
 	public double mostrarFondos(){

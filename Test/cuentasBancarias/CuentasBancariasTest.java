@@ -34,6 +34,8 @@ public class CuentasBancariasTest {
 		cuentaorigen.transferirMontoHacia(cuentadestino,50);
 		Assert.assertEquals(350.0, cuentadestino.mostrarFondos(),0);
 		Assert.assertEquals(150.0, cuentaorigen.mostrarFondos(),0);
+		boolean ret=cuentaorigen.transferirMontoHacia(cuentadestino,250);
+		Assert.assertEquals(false,ret);
 	}
 	
 
