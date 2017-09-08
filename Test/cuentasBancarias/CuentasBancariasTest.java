@@ -10,29 +10,28 @@ public class CuentasBancariasTest {
 	CuentasBancarias cuentaorigen;
 	@Before
 	public void SetUp(){
-		cuentaorigen = new CuentasBancarias();
+		cuentaorigen = new CuentasBancarias(500);
 		cuentadestino = new CuentasBancarias();
 	}
 	
-	@Test
+	/*@Test
 	public void queIniciaSinParametros(){
 		CuentasBancarias cuentaorigen = new CuentasBancarias();
-		Assert.assertEquals(0,0,cuentaorigen.mostrarFondos());
+		Assert.assertEquals(0.0,cuentaorigen.mostrarFondos(),0);
 	}
 	@Test
 	public void queIniciaConParametros(){
-		CuentasBancarias cuentaorigen = new CuentasBancarias(500);
-		Assert.assertEquals(500,0, cuentaorigen.mostrarFondos());
-	}
-	
+		Assert.assertEquals(500.0, cuentaorigen.mostrarFondos(),0);
+	}*/
+	@Test
 	public void queTransfieraMontos(){
 		cuentaorigen.transferirMontoHacia(cuentadestino,200);
-		Assert.assertEquals(200,0, cuentadestino.mostrarFondos());
-		Assert.assertEquals(300,0, cuentaorigen.mostrarFondos());
+		Assert.assertEquals(200.0, cuentadestino.mostrarFondos(),0);
+		Assert.assertEquals(300.0, cuentaorigen.mostrarFondos(),0);
+		cuentaorigen.transferirMontoHacia(cuentadestino,100);
+		Assert.assertEquals(300.0, cuentadestino.mostrarFondos(),0);
+		Assert.assertEquals(200.0, cuentaorigen.mostrarFondos(),0);
 	}
 	
-	public static void main(String[] args) {
-		
-	}
 
 }
